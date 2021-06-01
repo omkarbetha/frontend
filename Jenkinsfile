@@ -1,3 +1,5 @@
+@Library('todo') _
+
 pipeline {
   agent {
     label 'JAVA'
@@ -28,9 +30,9 @@ pipeline {
     }
     stage('Upload Artifacts') {
       steps {
-        sh '''
-         curl -f -v -u admin:Omkar@123 --upload-file /home/ubuntu/workspace/frontend.zip http://172.31.4.7:8081/repository/frontend/frontend.zip
-        '''
+        script {
+          nexus
+        }
       }
     }
   }
