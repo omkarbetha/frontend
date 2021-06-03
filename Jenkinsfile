@@ -1,3 +1,9 @@
 @Library('todo') _
 
-todo()
+todo(
+     COMPONENT           : 'frontend',
+      PROJECT_NAME       : "Todo",
+      SLAVE_LABEL        : "NODEJS",
+      SKIP_NEXUS_UPLOAD  : false,
+      APP_TYPE           : "NGINX"
+)
