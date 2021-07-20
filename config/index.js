@@ -29,11 +29,11 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/login': {
-        target: process.env.AUTH_API_ADDRESS || 'http://172.31.62.130:8080',
+        target: process.env.AUTH_API_ADDRESS || 'http://172.31.4.145:8080',
         secure: false
       },
       '/todos': {
-        target: process.env.TODOS_API_ADDRESS || 'http://172.31.29.162:8080',
+        target: process.env.TODOS_API_ADDRESS || 'http://172.31.7.198:8080',
         secure: false
       },
       '/zipkin': {
